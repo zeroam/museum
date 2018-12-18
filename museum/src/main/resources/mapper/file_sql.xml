@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="file_sql">
+<!--   
+  <insert id="INSERT_EMPLOYEE">
+    INSERT INTO employee (id, name, hp, pos, dept, regday)  VALUES(#{id},#{name},#{hp},#{pos},#{dept},NOW());
+  </insert>
+  <select id="SELECT_EMPLOYEE" resultType="kr.co.ch10.vo.EmployeeVO">
+       SELECT * FROM employee;
+  </select>
+  <select id="SELECT_ONE_EMPLOYEE" resultType="kr.co.ch10.vo.EmployeeVO">
+       SELECT * FROM employee WHERE id=#{id};
+  </select>
+  <update id="UPDATE_EMPLOYEE">
+       UPDATE employee SET name=#{name}, hp=#{hp}, pos=#{pos}, dept=#{dept} WHERE  id=#{id};
+  </update>
+  <delete id="DELETE_EMPLOYEE">
+       DELETE FROM employee WHERE id=#{id};
+  </delete>
+-->
+	<insert id="INSERT_TB_FILE">
+		INSERT INTO tb_file (board_cate, board_seq, origin_name, stored_name)
+		VALUES (#{board_cate}, #{board_seq}, #{origin_name}, #{stored_name});
+	</insert>
+	<select id="SELECT_TB_FILE_DONA" parameterType="String" resultType="kr.co.museum.utils.FileVO">
+		SELECT * FROM tb_file WHERE board_seq=#{seq} AND board_cate='donationlist';
+	</select>
+	<select id="SELECT_TB_FILE" parameterType="String" resultType="kr.co.museum.utils.FileVO">
+		SELECT * FROM tb_file WHERE board_seq=#{seq} AND (board_cate='donationlist' OR board_cate='collectionlist');
+	</select>
+	<select id="DELETE_TB_FILE">
+		DELETE FROM tb_file WHERE seq=#{seq} AND (board_cate='donationlist' OR board_cate='collectionlist');
+	</select>
+	<select id="SELECT_FILE" resultType="kr.co.museum.utils.FileVO">
+		SELECT * FROM tb_file WHERE board_seq=#{seq} AND board_cate=#{cate};
+	</select>
+	<delete id="DELETE_FILE">
+		DELETE FROM tb_file WHERE board_seq=#{board_seq} AND board_cate=#{board_cate}
+	</delete>
+</mapper>

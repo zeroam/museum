@@ -1,0 +1,476 @@
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.42857143;
+  cursor: pointer;
+  color: #666666;
+  background: white;
+  border: 1px solid #666666;
+}
+
+.txtc {
+  text-align: center !important;
+}
+
+
+#contents .search {
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  background: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contents .search .searchField {
+  height: 34px;
+  box-sizing: border-box;
+  border: 1px solid #bbbbbb;
+  color: #666666;
+  font-size: 14px;
+}
+
+#contents .search .searchValue {
+  width: 240px;
+  height: 34px;
+  box-sizing: border-box;
+  border: 1px solid #bbbbbb;
+  text-align: left;
+  padding: 0 5px;
+}
+
+#contents .search .btn_search {
+  background: #7b858d;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  width: 60px;
+  height: 34px;
+}
+
+#contents .board_count {
+  text-align: right;
+  margin: 10px 0;
+  color: #959595;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+#contents .board_count .ctn {
+  float: left;
+}
+
+#contents .board_count .ctn strong {
+  color: black;
+}
+
+/* donationlist 리스트 페이지 시작 */
+#contents .board_normal_list {
+  position: relative;
+}
+
+#contents .board_normal_list > ul {
+  border-top: 2px solid #545c73;
+}
+
+#contents .board_normal_list > ul > li {
+  position: relative;
+  padding: 20px;
+  padding-right: 40px;
+  min-height: 50px;
+  border-bottom: 1px solid #dddddd;
+}
+
+#contents .board_normal_list > ul > li:hover {
+  background: #f6f6f6;
+}
+
+#contents .board_normal_list > ul > li a {
+  display: inline-block;
+}
+
+#contents .board_normal_list .title_line {
+  display: inline-block;
+  padding-right: 20px;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+}
+
+#contents .board_normal_list .info_line span {
+  display: inline-block;
+  padding: 0 5px;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #999999;
+  border-left: 1px solid gray;
+}
+
+#contents .board_normal_list .btn_show_attach_file {
+	font-size: 20px;
+	background: #323f50;
+	color: #ffffff;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	right: 20px;
+	width: 32px;
+	height: 32px;
+}
+/* board_normal_list 끝 */
+
+/* board_photo_list 시작 */
+#contents .board_photo_list {
+	position: relative;
+}
+
+#contents .board_photo_list > ul {
+	border-top: 2px solid #545c73;
+	padding-top: 10px;
+	margin: 0px -10px;
+	overflow: hidden;
+}
+
+#contents .board_photo_list > ul > li {
+	margin: 10px;
+	width: 290px;
+	display: inline-block;
+	float: left;
+}
+
+#contents .board_photo_list > ul > li > a {
+	display: inline-block;
+	width: 100%;	
+}
+
+#contents .board_photo_list .pic {
+	box-sizing: border-box;
+	border: 1px solid #dddddd;
+	width: 100%;
+	height: 167px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #eeeeee;
+}
+
+#contents .board_photo_list .info {
+	padding: 5px;
+}
+
+#contents .board_photo_list .info .title {
+	font-weight: bold;
+	margin-top: 5px;
+	height: 40px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #333333;
+	overflow-wrap: break-word;
+}
+#contents .board_photo_list .info .date {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #666666;
+	text-align: right;
+}
+
+/* board_photo_list 끝 */
+
+#contents .board_paging {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#contents .board_paging ul {
+  display: inline-block;
+  margin: 0 5px;
+  overflow: hidden;
+}
+
+#contents .board_paging ul li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  border: 1px solid #dddee0;
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+#contents .board_paging ul li.on {
+  background: #f6f6f6;
+  color: #555555;
+  font-weight: bold;
+}
+
+#contents .board_paging ul li:hover {
+  background: #f6f6f6;
+}
+
+#contents .board_paging ul li.btn_first {
+  background: url('/museum/img/first.png') no-repeat center;
+  font-size: 0;
+}
+#contents .board_paging ul li.btn_prev {
+  background: url('/museum/img/prev.png') no-repeat center;
+  font-size: 0;
+}
+#contents .board_paging ul li.btn_last {
+  background: url('/museum/img/last.png') no-repeat center;
+  font-size: 0;
+}
+#contents .board_paging ul li.btn_next {
+  background: url('/museum/img/next.png') no-repeat center;
+  font-size: 0;
+}
+
+#contents .board_paging ul li a {
+  display: block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* donationlist 리스트 페이지 끝 */
+
+/* donationlist 뷰 페이지 시작 */
+#contents .material_detail {
+  border-bottom: 1px solid #dddee0;
+  box-sizing: border-box;
+}
+
+#contents .material_detail .title {
+  font-weight: bold;
+  font-size: 22px;
+  color: #333333;
+  text-align: center;
+}
+
+#contents .material_detail .content {
+  width: 100%;
+  margin-top: 30px;
+  border-top: 2px solid #545c73;
+  padding: 50px 0px;
+  overflow: hidden;
+}
+
+#contents .material_detail .content .box {
+  float: left;
+  width: 50%;
+}
+
+#contents .material_detail .content .box_middle {
+	width: 70%;
+	margin: 0 auto;	
+}
+
+#contents .material_detail .content .box_middle input {
+	width: 100%;
+	height: 25px;
+	background: #e9e9e9;
+	font-size: 15px;
+}
+
+#contents .material_detail .content .box0 .image {
+  background-color: #e5e5e5;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 202px;
+  margin: 0 auto;
+}
+
+#contents .material_detail .content .box1 ul {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contents .material_detail .content .box1 li {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#contents .material_detail .content .box1 li div {
+  display: table-cell;
+  border-bottom: 1px solid #dddee0;
+  color: #666666;
+  font-size: 15px;
+  padding: 8px 11px;
+}
+
+#contents .material_detail .content .box1 li div:first-child {
+  border-bottom-color: #afafbb;
+  width: 40%;
+  color: #333333;
+  font-weight: bold;
+}
+
+#contents .list_view {
+  margin-top: 30px;
+  text-align: right;
+}
+
+#contents .list_view a {
+  color: white;
+  background: #607a8b;
+  border: 1px solid #607a8b;
+}
+
+#contents .list_write {
+	margin-top: 30px;
+	text-align: right;	
+}
+/* donationlist 뷰 페이지 끝 */
+
+/* news_view 시작 */
+#contents .news_section {
+	position: relative;
+	margin-top: 50px;
+	border-top: 2px solid #545c73;
+}
+
+#contents .news_section .read_title {
+	padding: 20px;
+	min-height: 50px;
+	border-bottom: 1px solid #dddddd;
+	cursor: pointer;
+}
+
+#contents .news_section .title_line {
+	font-size: 15px;
+	color: #333333;
+	font-weight: bold;	
+}
+#contents .news_section .info_line {
+	margin-top: 5px;
+	text-align: right;
+}
+#contents .news_section .info_line span {
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 12px;
+	color: #999999;
+	border-left: 1px solid #999999;
+	padding: 0 5px;
+}
+#contents .news_section .info_line span:first-child {
+	border-left: none;
+}
+#contents .news_section .read_content {
+	padding: 20px;
+	min-height: 300px;
+	border-bottom: 1px solid #dddddd;	
+}
+#contents .news_section .read_content * {
+	max-width: 100%;
+}
+#contents .news_section .read_file {
+	display: table;
+	width: 100%;
+	border-bottom: 1px solid #dddddd;
+	font-size: 14px;
+	color: #666666;
+}
+#contents .news_section .read_file div {
+	display: table-cell;
+	height: 50px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	vertical-align: middle;
+}
+#contents .news_section .read_file .label {
+	width: 15%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	color: #666666;	
+	
+}
+#contents .news_section .read_file .form {
+	padding-right: 8px;
+}
+#contents .news_section .read_file .form a {
+	display: inline-block;
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 13px;
+	color: #333333;
+}
+/* news_view 끝 */
+/* news_write 시작 */
+#contents .news_section .write_sec table {
+	width: 100%;
+}
+#contents .news_section .write_sec table input {
+	width: 100%;
+	height: 20px;
+}
+#contents .news_section .write_sec table textarea {
+	width: 100%;
+}
+#contents .news_section .write_sec table td {
+	padding: 8px 5px;
+	border-bottom: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+}
+#contents .news_section .write_sec table td.textarea {
+	padding: 0px;
+}
+#contents .news_section .write_sec table td:nth-child(1) {
+	width: 150px;
+	background: #f5f8f9;
+	text-align: center;
+}
+#contents .news_section .nav_list {
+	margin-top: 60px;
+}
+#contents .news_section .nav_list > ul {
+	border-top: 2px solid #545c73;
+}
+#contents .news_section .nav_list > ul > li {
+	padding: 20px;
+	min-height: 50px;
+	border-bottom: 1px solid #dddddd;	
+}
+#contents .news_section .nav_list > ul > li > a {
+	display: block;
+}
+#contents .news_section .nav_list .title_line {
+	display: table;
+	position: relative;
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 14px;
+	color: #333333;
+	font-weight: bold;
+}
+#contents .news_section .nav_list .title_line div {
+	display: table-cell;
+}
+#contents .news_section .nav_list .angle {
+	content: '';
+	background-repeat: no-repeat;
+	background-position: left;
+	text-align: center;
+	width: 20px;
+}
+#contents .news_section .nav_list .nav_next {
+	padding-left: 5px;
+	width: 60px;
+	color: #999999;
+	text-align: left;
+}
+#contents .news_section .nav_list .title {
+	vertical-align: middle;
+}
+/* news_write 끝 */
