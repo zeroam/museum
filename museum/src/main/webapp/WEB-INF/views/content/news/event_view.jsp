@@ -53,9 +53,6 @@
 					<div class="list_view">
 						<a class="btn txtc" href="/museum/event">목록</a>
 						<c:if test="${member.user.equals('admin')}">
-							<a class="btn txtc" id="update"
-								href="/museum/event_update?seq=${vo.seq}"
-								style="background: firebrick">수정</a>
 							<a class="btn txtc" id="delete"
 								href="/museum/news_delete?seq=${vo.seq}&cate=${vo.cate}"
 								style="background: firebrick">삭제</a>
